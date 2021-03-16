@@ -1,25 +1,50 @@
-<div *ngIf="dataLoaded==false" class="spinner-border text-dark" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>
-<table *ngIf ="dataLoaded==true" class="table">
-    <thead>
-        <tr>
-            <th>Araba İsmi:</th>
-            <th>Marka İsmi:</th>
-            <th>Id:</th>
-            <th>Günlük Fiyat:</th>
-            <th>Model Yılı:</th>
-            <th>Açıklama:</th>
-        </tr>
-        
-    </thead>
-    <tr *ngFor="let car of cars">
-        <td>{{car.carName}}</td>
-        <td>{{car.brandName}}</td>
-        <td>{{car.carId}}</td>
-        <td>{{car.dailyPrice}}</td>
-        <td>{{car.modelYear}}</td>
-        <td>{{car.description}}</td>
-
+<!-- <h4>Araba Listesi</h4>
+<table class="table table-hover bg-light">
+  <thead class="text-light" style="background-color: blueviolet;">
+    <tr>
+      <th>Araç No:</th>
+      <th>Araç İsmi:</th>
+      <th>Marka No:</th>
+      <th>Renk No:</th>
+      <th>Günlük Fiyat:</th>
+      <th>Model Yılı:</th>
+      <th>Açıklama:</th>
     </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let car of cars">
+      <td>{{ car.carId }}</td>
+      <td>{{ car.carName }}</td>
+      <td>{{ car.brandId }}</td>
+      <td>{{ car.colorId }}</td>
+      <td>{{ car.dailyPrice }}</td>
+      <td>{{ car.modelYear }}</td>
+      <td>{{ car.description }}</td>
+    </tr>
+  </tbody>
+</table> -->
+<h4>Araba Listesi</h4>
+<table class="table table-hover bg-light">
+  <thead class="text-light" style="background-color: blueviolet;">
+    <tr>
+      <th>Araç No:</th>
+      <th>Araç İsmi:</th>
+      <th>Marka İsmi:</th>
+      <th>Araç rengi:</th>
+      <th>Günlük Fiyat:</th>
+      <th>Model Yılı:</th>
+      <th>Açıklama:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cardto of cardtos">
+      <td>{{ cardto.carId }}</td>
+      <td>{{ cardto.carName }}</td>
+      <td>{{ cardto.brandName }}</td>
+      <td>{{ cardto.colorName }}</td>
+      <td>{{ cardto.dailyPrice }}</td>
+      <td>{{ cardto.modelYear }}</td>
+      <td>{{ cardto.description }}</td>
+    </tr>
+  </tbody>
 </table>

@@ -1,1 +1,17 @@
-<p>customer works!</p>
+<h4>Müşteri Listesi</h4>
+<table class="table table-hover bg-light">
+  <thead class="text-light" style="background-color:darkorchid">
+    <tr>
+      <th>Müşteri No</th>
+      <th>Kullanıcı No</th>
+      <th>Şirket Adı</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customers">
+    <td>{{ customer.customerId }}</td>
+    <td>{{customer.userId}}</td>
+    <td>{{ customer.companyName }}</td>
+  </tr>
+</tbody>
+</table>

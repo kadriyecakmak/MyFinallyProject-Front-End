@@ -1,18 +1,43 @@
-
-<div class="container">
+<div
+  class="jumbotron bg-cover"
+  style="
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.5) 100%
+      ),
+      url(fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80)"
+>
   <app-navi></app-navi>
-  <div class="row">
-    <div class="col-md-3 ">
-      <app-category></app-category>
+  <div class="mx-5">
+    <div class="row py-3">
+      <div class="col-3">
+        <div class="row">
+          <app-brand></app-brand>
+        </div>
+        <div class="row mt-3">
+          <app-color></app-color>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="row">
+          <app-car></app-car>
+        </div>
+        <div class="row">
+          <app-rental></app-rental>
+        </div>
+        <div class="row">
+          <app-customer></app-customer>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
     </div>
-    <div class="col-md-9">
-      <app-car></app-car>
-    </div>
-   
   </div>
-
-
-<router-outlet></router-outlet> 
-
 </div>
 
+<div class="bg-dark pt-3 pb-3">
+  <p class="text-center text-light ">©Kadriye Çakmak</p>
+</div>
