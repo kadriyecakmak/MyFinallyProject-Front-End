@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Rental } from 'src/app/models/rental';
-import { RentalDto } from 'src/app/models/RentalDto';
+import { RentalDto } from 'src/app/models/rentalDto';
 import { RentalService } from 'src/app/services/rental.service';
 
 
@@ -22,6 +22,7 @@ export class RentalComponent implements OnInit {
   getRentals() {
     this.rentalService.getRentals().subscribe(response =>{
       this.rentals = response.data
+
     })
   }
   getRentalDtoList() {

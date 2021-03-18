@@ -24,21 +24,23 @@
   <thead class="text-light" style="background-color: darkslateblue;">
     <tr>
       <th>Rent No</th>
+      <th>Müsteri Adı</th>
       <th>Marka Adı</th>
       <th>Araç Adı</th>
-      <th>Araç Rengi</th>
-      <th>Model Yılı</th>
+      <!-- <th>Araç Rengi</th>
+      <th>Model Yılı</th> -->
       <th>Başlangıç Tarihi</th>
       <th>Bitiş Tarihi</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let rentaldto of rentaldtoss">
+    <tr *ngFor="let rentaldto of rentaldtos">
       <td>{{ rentaldto.rentalId }}</td>
+      <td>{{ rentaldto.userName }}</td>
       <td>{{ rentaldto.brandName }}</td>
       <td>{{ rentaldto.carName }}</td>
-      <td>{{ rentaldto.colorName }}</td>
-      <td>{{ rentaldto.modelYear }}</td>
+      <!-- <td>{{ rentaldto.colorName }}</td> -->
+      <!-- <td>{{ rentaldto.modelYear }}</td> -->
       <td>{{ rentaldto.rentDate }}</td>
       <td>{{ rentaldto.returnDate }}</td>
     </tr>
