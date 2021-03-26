@@ -1,8 +1,8 @@
-export interface RentalDto {
-  rentalId: number;
-  brandName: string;
-  userName: string;
-  carName: string;
-  rentDate: Date;
-  returnDate: Date;
+export interface RentalDto{
+  rentalId : number;
+  carName : string;
+  brandName:string;
+  userName:string;
+  rentDate : Date;
+  returnDate : Date;
 }
